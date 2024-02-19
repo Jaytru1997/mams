@@ -1,0 +1,150 @@
+<div class="mobile-author-actions"></div>
+<header class="header-top">
+    <nav class="navbar navbar-light">
+        <div class="navbar-left">
+            <a href="" class="sidebar-toggle">
+                <img class="svg" src="../../../public/img/svg/bars.svg" alt="img"></a>
+            <!-- <a class="navbar-brand" href="#">
+                    <img class="dark" src="../../../public/icons/keyicon.png" alt="svg">
+                    <img class="light" src="../../../public/icons/keyicon.png" alt="img">
+                </a> -->
+            <div class="top-menu">
+
+                <div class="strikingDash-top-menu position-relative">
+                    <ul>
+                        <li class="has-subMenu">
+                            <a href="#" class="">Layouts</a>
+                            <ul class="subMenu">
+                                <li class="l_sidebar">
+                                    <a href="#" data-layout="light">Light Mode</a>
+                                </li>
+                                <li class="l_sidebar">
+                                    <a href="#" data-layout="dark">Dark Mode</a>
+                                </li>
+                                <li class="l_navbar">
+                                    <a href="#" data-layout="top">Top Menu</a>
+                                </li>
+                                <li class="l_navbar">
+                                    <a href="#" data-layout="side">Side Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-subMenu">
+                            <a href="#" class="active">Dashboard</a>
+                            <ul class="subMenu">
+                                <li>
+                                    <a class="active" href="/auth/dashboard">Site Dashboard</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+
+                        <li class="mega-item has-subMenu">
+                            <a href="#" class="">Pages</a>
+                            <ul class="megaMenu-wrapper megaMenu-small">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="/auth/" class="">Users
+                                                Table</a>
+                                        </li>
+                                        <li>
+                                            <a href="/auth/" class="">Add User</a>
+                                        </li>
+                                        <li>
+                                            <a href="/auth/" class="">
+                                                <span class="menu-text">Services</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/auth/" class="">
+                                                <span class="menu-text">Blogs</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/auth/" class="">
+                                                <span class="menu-text">Send Email</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="mega-item has-subMenu">
+                            <a href="#" class="">Technical Support</a>
+                            <ul class="megaMenu-wrapper megaMenu-small">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="/auth/" class="">Support Center</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- ends: navbar-left -->
+
+        <div class="navbar-right">
+            <ul class="navbar-right__menu">
+                <!-- ends: .nav-support -->
+                <li class="nav-flag-select">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle"><img src="../../../public/img/flag.png" alt=""
+                                class="rounded-circle"></a>
+                        <div class="dropdown-wrapper dropdown-wrapper--small">
+                            <a href=""><img src="../../../public/img/eng.png" alt=""> English</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: .nav-flag-select -->
+                <li class="nav-author">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle"><img src="../../../public/img/author-nav.jpg" alt=""
+                                class="rounded-circle"></a>
+                        <div class="dropdown-wrapper">
+                            <div class="nav-author__info">
+                                <div class="author-img">
+                                    <img src="../../../public/img/author-nav.jpg" alt="" class="rounded-circle">
+                                </div>
+                                <div>
+                                    <h6><%= user.email %> </h6>
+                                    <span><%= user.role %> <%= user.status %> account</span>
+                                </div>
+                            </div>
+                            <div class="nav-author__options">
+                                <ul>
+                                    <li>
+                                        <a href="/auth/">
+                                            <span data-feather="user"></span> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="/auth/">
+                                            <span data-feather="settings"></span> Settings</a>
+                                    </li>
+                                </ul>
+                                <a href="/logout" class="nav-author__signout">
+                                    <span data-feather="log-out"></span> Sign Out</a>
+                            </div>
+                        </div>
+                        <!-- ends: .dropdown-wrapper -->
+                    </div>
+                </li>
+                <!-- ends: .nav-author -->
+            </ul>
+            <!-- ends: .navbar-right__menu -->
+            <div class="navbar-right__mobileAction d-md-none">
+                <a href="#" class="btn-author-action">
+                    <span data-feather="more-vertical"></span>
+                </a>
+            </div>
+        </div>
+        <!-- ends: .navbar-right -->
+    </nav>
+</header>

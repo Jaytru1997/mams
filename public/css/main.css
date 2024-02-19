@@ -1,0 +1,314 @@
+/*
+--------------------------------------------
+--------------RESPONSIVE DESIGN-------------
+--------------------------------------------
+*/
+:root {
+    font-size: 62.5%;
+    --black: #000000;
+    --dark: #121212;
+    --white: #ffffff;
+    --light: #e7e7e7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* 
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+} */
+
+/*
+--------------------------------------------
+---------------NAVBAR STYLES----------------
+--------------------------------------------
+*/
+
+.nav-img {
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.sidenav-overlay {
+    height: 0px;
+    width: 0px;
+}
+
+
+/*
+--------------------------------------------
+---------------HEADER STYLES----------------
+--------------------------------------------
+*/
+.carousel {
+    height: 95vh;
+}
+
+.pm {
+    background-image: url(../images/IMG_6279.jpg);
+    background-size: 650px 95vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    filter: brightness(0.5);
+}
+
+.pj {
+    background-image: url(../images/IMG_6285.jpg);
+    background-size: 1020px 95vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.5);
+}
+
+/*
+--------------------------------------------
+----------------SERVICE CARD----------------
+--------------------------------------------
+*/
+
+.service-heading {
+    text-transform: uppercase;
+    margin: 40px 0px 20px 0px;
+    font-weight: 700;
+}
+
+.star {
+    margin: 10px 0px 20px 0px;
+    filter: invert(76%) sepia(19%) saturate(3352%) hue-rotate(353deg) brightness(107%) contrast(104%);
+}
+
+.service-time {
+    color: #f44336;
+    font-weight: 700;
+}
+
+.service-icon {
+    width: 48px;
+}
+
+
+/*
+--------------------------------------------
+----------------MINISTRY CARD---------------
+--------------------------------------------
+*/
+.ministry-card{
+    border-radius: 20px;
+    padding: 20px;
+    height: 620px;
+}
+
+.ministry-heading {
+    text-transform: uppercase;
+    margin: 40px 0px 20px 0px;
+    font-weight: 700;
+}
+
+.ministry-logo {
+    padding: 20px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+
+}
+
+.ministry-name {
+    text-transform: uppercase;
+    height: 50px;
+}
+
+.ministry-divider {
+    margin: 30px 0px -15px 0px;
+}
+
+.ministry-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 25px 0px 10px;
+}
+
+.ministry-icon {
+    width: 64px;
+}
+
+.ministry-action > a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/*
+--------------------------------------------
+---------------ANNOUNCEMENT-----------------
+--------------------------------------------
+*/
+.announcement-image {
+    max-height: 570px;
+    width: 100%;
+
+}
+
+.fixed-action-btn.announcement{
+    right: auto; 
+    margin-left: 1%;
+}
+
+
+/*
+--------------------------------------------
+------------------VIEWS---------------------
+--------------------------------------------
+*/
+
+/* Smartphones (extremely small devices) ----------- */
+/* @media only screen and (max-width : 320px) {
+    .carousel {
+        height: 100vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: 500px 700px;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: 1020px 700px;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+} */
+
+/* Smartphones (popular mobile devices) ----------- */
+/* @media (min-width: 576px) {    
+    .carousel {
+        height: 100vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: 500px 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: 500px 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(0.5);
+    }
+} */
+
+/* Smartphones (medium devices) ----------- */
+/* @media (min-width: 768px) {    
+    .carousel {
+        height: 100vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+} */
+
+/* Large devices (Tablets, 992px and up) */
+@media (min-width: 992px) {    
+    .carousel {
+        height: 95vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1200px) {    
+    .carousel {
+        height: 95vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+}
+
+/* Extra large device ----------- */
+@media (min-width: 1400px) {
+    .carousel {
+        height: 95vh;
+    }
+    
+    .pm {
+        background-image: url(../images/IMG_6279.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+    
+    .pj {
+        background-image: url(../images/IMG_6285.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        filter: brightness(0.5);
+    }
+}

@@ -1,0 +1,50 @@
+<!-- <div class="col-xl-6">
+<div class="card mb-25"> -->
+<div class="col-lg-8 mb-25">
+
+    <div class="card card-overview border-0">
+        <div class="card-header">
+            <h6>Task Lists</h6>
+        </div>
+        <div class="card-body px-0 pt-15 pb-25">
+            <div class="todo-task table-responsive todo-task1">
+                <table class="table table-borderless">
+                    <tbody id="task-body">
+                        <!--Tasks enter here-->
+                    </tbody>
+                </table>
+            </div>
+            <div class="add-task-action">
+                <button type="submit" class="btn btn-primary btn-transparent-primary btn-lg" data-toggle="modal" data-target="#add-todo-modal">
+                    <span data-feather="plus"></span> Add New Task</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="add-todo-modal modal fade" id="add-todo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md add-todo-dialog modal-dialog-centered" id="add-todo" role="document">
+        <div class="modal-content">
+            <div class="modal-header add-todo-header">
+                <h6 class="modal-title add-todo-title">Add New Todo</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span data-feather="x"></span></button>
+            </div>
+            <div class="modal-body">
+                <div class="add-todo-form">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg" name="todo-text" placeholder="Write your task" id="new-task-desc">
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="submit" class="btn btn-lg btn-primary" id="add-task">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- ends: .add-todo-form -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ends: .add-todo-modal -->
